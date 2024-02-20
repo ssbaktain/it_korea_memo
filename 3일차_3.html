@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 200px;
+            background-color: dodgerblue;
+            display: flex;
+            /* justify는 가로축을 의미 */
+            /* align은 세로축을 의미 */
+            justify-content: space-between;
+        }
+        .container > div{
+            background-color: lightgray;
+            width: 150px;
+            /* 
+            inline-block은 실무에서 사용 안함
+            display: inline-block;
+            margin: 10px;
+            */
+        }
+    </style>
+</head>
+<body>
+    <!-- Flex, 실무에서 사용률 10000000000000000%
+        1. margin, padding
+        2. flex
+        3. position
+        홈체이지 제작 가능!
+
+        Flex는 복잡한 레이아웃을 간편하게 만들 수 있도록 도와준다. (유튜브, 인스타그램)
+        크기와 위치를 동적으로 조절 가능하다. (즉, 핸드폰 사이즈던 모니터 사이즈던 자동으로 줄어들고 늘어난다.)
+        이를 통해 다양한 디바이스와 화면 크기에 맞춰 레이아웃을 만들 수 있다.
+    -->
+
+    <div class="container">
+        <div>
+            1
+            <img src="돼지.gif" alt="">
+        </div>
+        <div>
+            2
+            <img src="리본돼지.gif" alt="">
+        </div>
+        <div>
+            3
+            <img src="철갑돼지gif.gif" alt="">
+        </div>
+        <div>
+            4
+            <img src="파이어호그.gif" alt="">
+        </div>
+    </div>
+</body>
+</html>

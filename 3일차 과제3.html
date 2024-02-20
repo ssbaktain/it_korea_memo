@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 1000px;
+        height: 400px;
+        background-color: darkgray;
+        display: flex;
+        padding: 20px;
+        margin: 50px auto;
+      }
+      .card {
+        width: 500px;
+        color: white;
+      }
+      .container :nth-child(1) {
+        background-color: dodgerblue;
+      }
+      .container :nth-child(2) {
+        background-color: orangered;
+      }
+      .container :nth-child(3) {
+        background-color: cyan;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+    </div>
+  </body>
+</html>

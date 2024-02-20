@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            /* padding은 auto 불가능 */
+            /* 
+                margin : 1px; //상 하 좌 우 마진을 1px 설정
+                margin : 1px 2px; //상하 마진 1px, 좌우 마진을 2px 설정
+                margin : 1px 2px 3px; //위 마진을 1px, 아래 마진을 2px, 좌우 마진을 3px 설정
+                margin : 1px 2px 3px 4px; //위 마진 1px, 아래 2px, 좌 3px, 우 4px 설정
+
+                padding : 1px; //상 하 좌 우 패딩을 1px 설정
+                padding : 1px 2px; //상하 패딩 1px, 좌우 패딩을 2px 설정
+                padding : 1px 2px 3px; //위 패딩을 1px, 아래 패딩을 2px, 좌우 마진을 3px 설정
+                padding : 1px 2px 3px 4px; //위 패딩 1px, 아래 2px, 좌 3px, 우 4px 설정
+            */
+            margin: 20px auto;
+            width: 500px;
+            height: 800px;
+            background-color: lightgray;
+            padding: 20px;
+        }
+        .content01, .content02{
+        width: 450px;
+            height: 250px;
+            background-color: darkgreen;
+            border: 1px solid black;
+            margin-bottom: 250px;
+        }
+    </style>
+</head>
+<body>
+    <!-- padding & margin 복습 -->
+    <div class="container">
+        <div class="content01"></div>
+        <div class="content02"></div>
+    </div>
+</body>
+</html>

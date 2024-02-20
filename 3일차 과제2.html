@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            border: 3px solid black;
+            width: 600px;
+            height: 300px;
+            position: relative;
+            top: 100px;
+            left: 200px;
+        }
+        /* container 안에 있는 div에 스타일을 주겠다. */
+        /* content01과 content02는 container의 자식 태그다.
+           부모 태그가 relative이고 자식 태그가 absolute여야
+           부모 태그 기준으로 움직일 수 있다.
+        */
+        .container > div{
+            border: 1px solid red;
+            width: 200px;
+            height: 100px;
+            position: absolute;
+        }
+        .content01{
+            top: 0;
+            right: 0;
+        }
+        .content02{
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content01">
+            <img src="돼지.gif" alt="">
+        </div>
+        <div class="content02">
+            <img src="리본돼지.gif" alt="">
+        </div>
+    </div>
+</body>
+</html>
