@@ -4,36 +4,81 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .header {
+        width: 100vw;
+        height: 80px;
+        background-color: #5865f2;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 9%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .icon-img {
+        width: 124px;
+        height: 24px;
+      }
+      .icon-img img {
+        width: 100%;
+        height: 100%;
+        /* object-fit 이미지 선명하게 */
+        object-fit: cover;
+      }
+      .btn a {
+        color: #23272a;
+        background-color: #fff;
+        border-radius: 40px;
+        padding: 7px 16px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+      }
+      ul {
+        display: flex;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      ul li {
+        list-style: none;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 10px;
+        font-weight: 600;
+        font-size: 16px;
+      }
+    </style>
   </head>
   <body>
-    <!-- hero(히어로)는 페이지 상단에 표시되는 큰 영역을 의미
-    사용자에게 첫인상을 제공하므로 모범적인 디자인 사례를 따르는 것이 중요하다. -->
-    <!-- hero section 시작 -->
-    <div class="hero">
-      <div class="hero_content">
-        <h1>IT Resturant</h1>
-        <h2>Best Quality and Tasty Food😝</h2>
-        <a href="">MENU</a>
-      </div>
-    </div>
-    <!-- hero section 끝 -->
-    <!-- header section 시작 -->
     <div class="header">
-      <div class="navbar">
-        <h1>IT Resturant</h1>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Menu</a></li>
-          <li><a href="">Chef</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-        <div class="phone">
-          <a href="">+8201099028564</a>
+      <div class="icon">
+        <div class="icon-img">
+          <!-- 실무에서, 이미지 태그는 div로 한번 더 묶어준다. -->
+          <img src="icon.svg" alt="" />
         </div>
       </div>
+      <div class="nav">
+        <ul>
+          <li><a href="https://discord.com/download">다운로드</a></li>
+          <li><a href="https://discord.com/nitro">Nitro</a></li>
+          <li><a href="https://discord.com/servers">길찾기</a></li>
+          <li><a href="https://discord.com/safety">보안센터</a></li>
+          <li><a href="https://discord.com/hc">지원</a></li>
+          <li><a href="https://discord.com/blog">블로그</a></li>
+          <li><a href="https://discord.com/careers">인재채용</a></li>
+        </ul>
+      </div>
+      <div class="btn">
+        <a href="https://discord.com/channels/@me">로그인</a>
+      </div>
     </div>
-    <!-- header section 끝 -->
   </body>
 </html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100vw;
+        padding: 30px 10%;
+        background-color: #24252a;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .item:nth-child(1) {
+        display: flex;
+        align-items: center;
+      }
+      .item:nth-child(1) .logo {
+        font-size: 30px;
+        background-color: #ececec;
+        border: 1px solid red;
+      }
+      .item:nth-child(2) ul {
+        display: flex;
+      }
+      .item:nth-child(2) ul li {
+        list-style: none;
+        border: 1px solid red;
+        padding: 0px 20px;
+      }
+      .item:nth-child(2) ul li a {
+        /* a태그는 기본적으로 밑줄이 있음,
+        text-decoration:으로 없애자! */
+        text-decoration: none;
+        color: white;
+      }
+      .item:nth-child(3) {
+        border: 1px solid red;
+      }
+      .item:nth-child(3) button {
+        background-color: rgba(0, 136, 169, 1);
+        color: white;
+        padding: 9px 25px;
+        border-radius: 50px;
+        /* button 태그는 기본으로 border가 그려져 있음.
+        border: none; 외곽선을 없앰 */
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">
+        <div class="logo">로고 영역</div>
+      </div>
+      <div class="item">
+        <ul>
+          <li><a href="">Service</a></li>
+          <li><a href="">Project</a></li>
+          <li><a href="">About</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <button>contact</button>
+      </div>
+    </div>
+  </body>
+</html>
