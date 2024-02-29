@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100vw;
+        height: 10vh;
+        background-color: yellowgreen;
+        display: flex;
+        justify-content: space-between;
+      }
+      .item {
+        flex: 0 0 20vw;
+        border: 1px solid black;
+      }
+      .item:nth-child(1) {
+        background-color: #d7e8d4;
+      }
+      .item:nth-child(2) {
+        background-color: beige;
+      }
+      .item:nth-child(3) {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        1.flex가 부모와 자식관계
+
+        2~5 : 컨테이너에 주는 속성
+        2. 아이템(전체) 가로 배치는 row,
+        아이템 세로 배치는 column
+        3. justify(가로축), align(세로축)
+        4. space-between, space-around,
+        center 가로축 기준 아이템 정렬
+        5. align-item : center, 세로축 기준 아이템 가운데 정렬
+
+        6. flex basis, grow, shrink, 아이템에 주는 속성
+     -->
+    <div class="container">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+  </body>
+</html>
